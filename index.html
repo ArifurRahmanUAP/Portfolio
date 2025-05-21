@@ -1,514 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Arifur Rahman - Software Engineer. </title> 
-
-	
-	<!-- Primary Meta Tags -->
-<meta name="title" content="Arifur Rahman - Software Engineer.">
-<meta name="description" content="To pursue career in the software industry, apply my hard-earned analytical skills and knowledge, and provide quality contributions.">
-<meta name="keywords" content="Arifur Rahman, Arif, Arifur, Rahman, Sagar, Mobile, Android, Mobile Application Developer, IOS, Flutter, JAVA, Engineer, Software, Software Engineer">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-<meta name="author" content="Arifur Rahman">
-<meta property="image" content="images/arifurrahman.jpg">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://arifurrahman.tk/">
-<meta property="og:title" content="Arifur Rahman - Software Engineer.">
-<meta property="og:description" content="To pursue career in the software industry, apply my hard-earned analytical skills and knowledge, and provide quality contributions.">
-<meta property="og:image" content="images/arifurrahman.jpg">
-
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://arifurrahman.tk/">
-<meta property="twitter:title" content="Arifur Rahman - Software Engineer.">
-<meta property="twitter:description" content="To pursue career in the software industry, apply my hard-earned analytical skills and knowledge, and provide quality contributions.">
-<meta property="og:image" content="images/arifurrahman.jpg">
-
-	
-	
-    <!-- ===== CSS Files ===== -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- ====== Style Switcher ====== -->
-    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="css/style-switcher.css">
+    <title>Md Arifur Rahman | Mobile App Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .skill-pill {
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .skill-pill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #4f46e5;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .active-nav::after {
+            width: 100%;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #4f46e5;
+            left: -8px;
+            top: 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background: #e2e8f0;
+            left: 0;
+            top: 0;
+        }
+        
+        .skill-category {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.3);
+        }
+    </style>
 </head>
-
-<body>
-    <!-- ===== Main Container Start ===== -->
-    <div class="main-container">
-        <!-- ===== Aside Start ===== -->
-        <div class="aside">
-            <div class="logo">
-                <a href="https://arifurrahman.tk/"><span>A</span>rif</a>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">AR</div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link active-nav text-gray-800 hover:text-indigo-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-800 hover:text-indigo-600">About</a>
+                    <a href="#skills" class="nav-link text-gray-800 hover:text-indigo-600">Skills</a>
+                    <a href="#experience" class="nav-link text-gray-800 hover:text-indigo-600">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-800 hover:text-indigo-600">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-800 hover:text-indigo-600">Contact</a>
+                </nav>
+                <button class="md:hidden focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars text-2xl text-gray-800"></i>
+                </button>
             </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-            </ul>
         </div>
-        <!-- ===== Aside End ===== -->
-        <!-- ===== Main Content Start ===== -->
-        <div class="main-content">
-            <!-- ===== Home Section Start ===== -->
-            <section class="home section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Md Arifur Rahman</span></h3>
-                            <h3 class="my-profession">I' m a <span class="typing">Software Engineer</span></h3>
-                            <a href="#contact" class="btn hire-me">Hire Me</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="images/arifurrahman.jpg" alt="">
-                        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white/90 w-full py-4 px-6 shadow-md" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="nav-link active-nav text-gray-800 hover:text-indigo-600">Home</a>
+                <a href="#about" class="nav-link text-gray-800 hover:text-indigo-600">About</a>
+                <a href="#skills" class="nav-link text-gray-800 hover:text-indigo-600">Skills</a>
+                <a href="#experience" class="nav-link text-gray-800 hover:text-indigo-600">Experience</a>
+                <a href="#projects" class="nav-link text-gray-800 hover:text-indigo-600">Projects</a>
+                <a href="#contact" class="nav-link text-gray-800 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Md Arifur Rahman</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6 gradient-text">Mobile Application Developer</h2>
+                    <p class="text-lg mb-8 max-w-lg text-gray-600">To pursue a career in the software industry, apply my hard-earned analytical skills and knowledge, and provide quality contributions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300">Hire Me</a>
+                        <a href="#projects" class="border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-600 hover:text-white transition duration-300">View Work</a>
+                    </div>
+                    <div class="mt-8 flex space-x-4">
+                        <a href="https://www.linkedin.com/in/arifur-rahman-uap/" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="https://github.com/ArifurRahmanUAP" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
                     </div>
                 </div>
-            </section>
-            <!-- ===== Home Section End ===== -->
-            <!-- ===== About Section Start ===== -->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-indigo-100 rounded-full blur-xl opacity-50"></div>
+                        <img src="https://ui-avatars.com/api/?name=Md+Arifur+Rahman&size=300&background=random" alt="Profile" class="relative rounded-full w-64 h-64 object-cover border-4 border-white floating shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-indigo-100 rounded-full blur-xl opacity-50"></div>
+                        <img src="https://ui-avatars.com/api/?name=Md+Arifur+Rahman&size=300&background=random" alt="Profile" class="relative rounded-full w-48 h-48 object-cover border-4 border-indigo-100 shadow-lg">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="text-lg mb-6">I'm a passionate Mobile Application Developer based in Dhaka, Bangladesh with a strong academic foundation in Computer Science & Engineering and a proven track record of building impactful applications.</p>
+                    <p class="text-lg mb-6">I specialize in developing cross-platform mobile applications using Flutter and Ionic, as well as native Android development. My goal is to create efficient, scalable, and user-friendly applications that solve real-world problems.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Email</h3>
+                                <p class="text-gray-600">uap.arifur@gmail.com</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I'm Md Arifur Rahman <span>- Software Engineer</span></h3>
-                                    <p>To pursue career in the software industry, apply my hard-earned analytical skills and knowledge, and provide quality contributions.</p>
-                                </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-indigo-600"></i>
                             </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Birthday : <span>25 oct 1997</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Age : <span>24</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>LinkedIn : <span><a href="https://www.linkedin.com/in/arifur-rahman-uap">Md. Arifur Rahman</a></p>
-					  
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Email : <span> <a href="mailto:uap.arifur@gmail.com"> uap.arifur@gmail.com </a> </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Degree : <span>B.Sc in Computer Science and Engineering</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Phone : <span><a href="tel:+8801521526371">+8801521526371</a></span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Dhaka</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Freelnace : <span>Not Available</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="cv/Resume_Arifur_Rahman.pdf" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>JAVA / Android</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 60%;"></div>
-                                                <div class="skill-percent">60%</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="skill-item padd-15">
-                                            <h5>Spring Boot</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 40%;"></div>
-                                                <div class="skill-percent">40%</div>
-                                            </div>
-                                        </div>
-
-                      
-                                        <div class="skill-item padd-15">
-                                            <h5>SQLite</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 50%;"></div>
-                                                <div class="skill-percent">50%</div>
-                                            </div>
-                                        </div>
-										
-										  <div class="skill-item padd-15">
-                                            <h5>POSTMAN</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 70%;"></div>
-                                                <div class="skill-percent">70%</div>
-                                            </div>
-                                        </div>
-										
-                                        <div class="skill-item padd-15">
-                                            <h5>GIT</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 50%;"></div>
-                                                <div class="skill-percent">50%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div>
+                                <h3 class="font-semibold">Phone</h3>
+                                <p class="text-gray-600">+8801521526371</p>
                             </div>
-                            <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2016 - 2020
-                                                    </h3>
-                                                    <h4 class="timeline-title">Bachelor in Computer Science and Engineering</h4>
-                                                    <p class="timeline-text"><b>University Of Asia Pacific, Dhaka, Bangladesh </b></p>
-                                                    <p class="timeline-text"><b>CGPA: 3.08/4.00</b></p>
-                                                </div>
-
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2016
-                                                    </h3>
-                                                    <h4 class="timeline-title">ELPC</h4>
-                                                    <p class="timeline-text"><b>University Of Asia Pacific, Dhaka, Bangladesh </b></p>
-                                                </div>
-
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Class of 2016
-                                                    </h3>
-                                                    <h4 class="timeline-title">Higher Secondary School Certificate</h4>
-                                                    <p class="timeline-text"><b>Comilla Government College, Comilla, Bangladesh</b> </p>
-                                                </div>
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Class of 2013
-                                                    </h3>
-                                                    <h4 class="timeline-title">Secondary School Certificate</h4>
-                                                    <p class="timeline-text"><b>Comilla Modern High School, Comilla, Bangladesh</b></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">Experience</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- ===== timeline item ===== -->
-             <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2023 - Running
-                                                    </h3>
-                                                    <h4 class="timeline-title"></h4>
-                                                    <p class="timeline-text"><b> Mobile Application Developer </b></p>
-                                                    <a href="https://www.bdjobs.com">Bdjobs.com Ltd.</a>
-
-                                                </div>
-
-						    
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2021 - 2022
-                                                    </h3>
-                                                    <h4 class="timeline-title"></h4>
-                                                    <p class="timeline-text"><b> Android Application Developer </b></p>
-                                                    <a href="http://justitbd.com">Just IT BD</a>
-
-                                                </div>
-
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2019
-                                                    </h3>
-                                                    <h4 class="timeline-title"></h4>
-                                                    <p class="timeline-text"><b> Industrial Training </b></p>
-                                                    <p class="timeline-text">GrameenPhone</p>
-                                                </div>
-                                                <!-- ===== timeline item ===== -->
-
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020
-                                                    </h3>
-                                                    <p class="timeline-text"><b> President</b></p>
-                                                    <p class="timeline-text">Film & Photography Club, UAP</p>
-                                                </div>
-
-
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2017-2020
-                                                    </h3>
-                                                    <h5 class="timeline-title">Volunteer</h5>
-                                                    <p class="timeline-text"> 1. National IT Competition for Youth with Disabilities - 2020</p>
-                                                    <p class="timeline-text"> 2. Prothom Alo Inter-School and College Programming Contest - 2018</li>
-                                                    </p>
-                                                    <p class="timeline-text"> 3. International Collegiate Programming Contest, Dhaka Region - 2017</li>
-                                                    </p>
-                                                    <p class="timeline-text"> 4. National Collegiate Programming Contest - 2017</li>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Location</h3>
+                                <p class="text-gray-600">Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-code-branch text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Experience</h3>
+                                <p class="text-gray-600">2+ years in mobile development</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- ===== About Section End ===== -->
-
-            <!-- ===== Portfolio Section Start ===== -->
-
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
+    <!-- Skills Section - Updated Design -->
+    <section id="skills" class="py-20 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Programming Languages -->
+                <div class="skill-category p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-code text-indigo-600 text-xl"></i>
                         </div>
+                        <h3 class="text-xl font-semibold">Languages</h3>
                     </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2>My Projects & contributions :</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fab fa-java text-red-500 mr-2"></i>
+                            <span>Java</span>
                         </div>
-                    </div>
-                    <div class="row">
-
-                        <!-- ====== portfolio item start ====== -->
-
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://play.google.com/store/apps/details?id=com.justit.voicetotext" target="_blank"><img src="images/portfolio/JustSay.PNG" alt="Just Say"></a>
-                                </div>
-                            </div>
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fas fa-code text-blue-500 mr-2"></i>
+                            <span>Dart</span>
                         </div>
-                        <!-- ====== portfolio item End ====== -->
-						
-						                        <!-- ====== portfolio item start ====== -->
-
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://play.google.com/store/apps/details?id=com.arif.footballworldcup2022" target="_blank"><img src="images/portfolio/fifa.png
-					    " alt="Football World Cup 2022"></a>
-                                </div>
-                            </div>
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fas fa-code text-purple-500 mr-2"></i>
+                            <span>Kotlin</span>
                         </div>
-                        <!-- ====== portfolio item End ====== -->
-
-                        <!-- ====== portfolio item start ====== -->
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://play.google.com/store/apps/details?id=com.justit.dislam" target="_blank"><img src="images/portfolio/DailyIslam.PNG" alt="Daily Islam"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ====== portfolio item End ====== -->
-                        <!-- ====== portfolio item start ====== -->
-
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://play.google.com/store/apps/details?id=com.justit.fitness_workout" target="_blank"><img src="images/portfolio/FitnessWorkout.PNG" alt="Fitness Workout"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ====== portfolio item End ====== -->
-						
-						
-						<!-- ====== portfolio item start ====== -->
-
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://play.google.com/store/apps/details?id=com.arif.passwordmanager" target="_blank"><img src="images/portfolio/PasswordManager.PNG" alt="Fitness Workout"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ====== portfolio item End ====== -->
-						
-						
-						
-						<!-- ====== portfolio item start ====== -->
-
-                        <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/Viceroy.PNG" alt="Fitness Workout">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ====== portfolio item End ====== -->
-						
-
-
                     </div>
                 </div>
-            </section>
-            <!-- ===== Portfolio Section End ===== -->
-            <!-- ===== Contact Section Start ===== -->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
+                
+                <!-- Frameworks -->
+                <div class="skill-category p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-cubes text-indigo-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Frameworks</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fab fa-android text-green-500 mr-2"></i>
+                            <span>Android</span>
+                        </div>
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fas fa-mobile-alt text-blue-400 mr-2"></i>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fas fa-globe text-indigo-500 mr-2"></i>
+                            <span>Ionic</span>
+                        </div>
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fas fa-leaf text-green-600 mr-2"></i>
+                            <span>Spring Boot</span>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
-                    <div class="row">
-                        <!-- ===== Contact info item start ====== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Me On</h4>
-                            <a href="tel:+8801521526371">+8801521526371</a>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="skill-category p-6">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-tools text-indigo-600 text-xl"></i>
                         </div>
-                        <!-- ===== Contact info item end ====== -->
-                        <!-- ===== Contact info item start ====== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Address</h4>
-                            <p>31, Road: 8, DIT Project, Merul Badda, Dhaka-1212</p>
+                        <h3 class="text-xl font-semibold">Tools & Tech</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fab fa-git-alt text-orange-500 mr-2"></i>
+                            <span>Git</span>
                         </div>
-                        <!-- ===== Contact info item end ====== -->
-                        <!-- ===== Contact info item start ====== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <a href="mailto:uap.arifur@gmail.com"> uap.arifur@gmail.com </a>
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fas fa-database text-blue-600 mr-2"></i>
+                            <span>Firebase</span>
                         </div>
-                        <!-- ===== Contact info item end ====== -->
-                        <!-- ===== Contact info item start ====== -->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>LinkedIn </h4>
-							<a href="https://www.linkedin.com/in/arifur-rahman-uap"> Md. Arifur Rahman </a>
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fas fa-server text-gray-600 mr-2"></i>
+                            <span>REST APIs</span>
+                        </div>
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fas fa-database text-yellow-600 mr-2"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                            <i class="fab fa-figma text-purple-400 mr-2"></i>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- State Management -->
+            <div class="mt-8 max-w-2xl mx-auto skill-category p-6">
+                <div class="flex items-center mb-6">
+                    <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-project-diagram text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold">State Management</h3>
+                </div>
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                        <i class="fas fa-cubes text-purple-600 mr-2"></i>
+                        <span>GetX</span>
+                    </div>
+                    <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                        <i class="fas fa-project-diagram text-blue-600 mr-2"></i>
+                        <span>Bloc</span>
+                    </div>
+                    <div class="skill-pill bg-white px-4 py-2 rounded-full shadow-sm flex items-center">
+                        <i class="fas fa-cube text-green-600 mr-2"></i>
+                        <span>Provider</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        </div>
-                        <!-- ===== Contact info item end ====== -->
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Work Experience</h2>
+            <div class="relative pl-8 timeline">
+                <!-- Timeline item 1 -->
+                <div class="relative mb-12 timeline-item">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold">Bdjobs.com Ltd.</h3>
+                        <p class="text-indigo-600 font-medium">Jan 2023 - Present</p>
+                        <p class="text-gray-600 mb-4">Mobile Application Developer</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Cross Platform Application Development (Flutter & Ionic)</li>
+                            <li>Android Application Development (Native)</li>
+                        </ul>
                     </div>
-                    <h3 class="contact-title padd-15">Send Me an Email</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
-                    <!-- ====== Contact Form ====== -->
-                    <form action="https://formspree.io/f/xoqrdqvq" method="post">
-                        <div class="row">
-                            <div class="contact-form padd-15">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="Name" placeholder="Name">
-                                        </div>
-                                    </div>
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="Email" placeholder="Email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="Subject" placeholder="Subject">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <textarea name="Message" class="form-control" id="" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <button type="submit" class="btn">Send Message</button>
-                                    </div>
-                                </div>
+                </div>
+                
+                <!-- Timeline item 2 -->
+                <div class="relative timeline-item">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold">Just IT BD</h3>
+                        <p class="text-indigo-600 font-medium">Nov 2021 - Dec 2022</p>
+                        <p class="text-gray-600 mb-4">Mobile Application Developer</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Android Application Development (Native)</li>
+                            <li>Cross Platform Application Development (Flutter)</li>
+                            <li>Spring Boot Backend</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md project-card transition duration-300">
+                    <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                        <i class="fas fa-utensils text-6xl text-indigo-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Food Delivery App</h3>
+                        <p class="text-gray-600 mb-4">A food ordering app for customers and a separate order retrieval system for restaurants.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md project-card transition duration-300">
+                    <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                        <i class="fas fa-futbol text-6xl text-indigo-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Football World Cup 2022</h3>
+                        <p class="text-gray-600 mb-4">App for Qatar 2022 World Cup fixtures and schedule tracking.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md project-card transition duration-300">
+                    <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                        <i class="fas fa-pray text-6xl text-indigo-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Munajat E Maqbool</h3>
+                        <p class="text-gray-600 mb-4">Daily du'as app featuring 200+ prayers in Arabic with English and Bangla translations.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md project-card transition duration-300">
+                    <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                        <i class="fas fa-blog text-6xl text-indigo-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Social Blogs</h3>
+                        <p class="text-gray-600 mb-4">Social platform for user-generated posts, comments, and interactions.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Java</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Spring Boot</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md project-card transition duration-300">
+                    <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                        <i class="fas fa-key text-6xl text-indigo-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Password Manager - Offline</h3>
+                        <p class="text-gray-600 mb-4">Secure offline password storage app using encrypted database.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Android</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md project-card transition duration-300">
+                    <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                        <i class="fas fa-suitcase text-6xl text-indigo-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Bdjobs Uddokta</h3>
+                        <p class="text-gray-600 mb-4">Platform for small entrepreneurs to hire skilled workers across Bangladesh.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-block border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-600 hover:text-white transition duration-300">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-indigo-50 rounded-xl p-6 text-center">
+                    <div class="bg-indigo-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-university text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">B.Sc. in CSE</h3>
+                    <p class="text-indigo-600 font-medium mb-2">University of Asia Pacific, Dhaka</p>
+                    <p class="text-gray-600">2016 - 2020</p>
+                </div>
+                <div class="bg-indigo-50 rounded-xl p-6 text-center">
+                    <div class="bg-indigo-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">HSC (Science)</h3>
+                    <div class="text-indigo-600 font-medium mb-2">Comilla Govt. College</div>
+                    <p class="text-gray-600">Class of 2016</p>
+                </div>
+                <div class="bg-indigo-50 rounded-xl p-6 text-center">
+                    <div class="bg-indigo-100 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-school text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">SSC (Science)</h3>
+                    <div class="text-indigo-600 font-medium mb-2">Comilla Modern High School</div>
+                    <p class="text-gray-600">Class of 2013</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Activities & Achievements</h2>
+            <div class="max-w-3xl mx-auto">
+                <ul class="list-disc pl-5 space-y-4">
+                    <li>Organizer & IT Support - National IT Competition for Youth with Disabilities (2020)</li>
+                    <li>Organizer & IT Support - Prothom Alo Inter-School & College Programming Contest (2018)</li>
+                    <li>Organizer & IT Support - ICPC Dhaka Region (2017)</li>
+                    <li>Participant - National Collegiate Programming Contest (2017)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">uap.arifur@gmail.com</p>
                             </div>
                         </div>
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="text-gray-600">+8801521526371</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="text-gray-600">Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <h3 class="text-xl font-semibold mb-6">Connect With Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/arifur-rahman-uap/" target="_blank" class="bg-indigo-100 p-3 rounded-full text-indigo-600 hover:bg-indigo-200 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/ArifurRahmanUAP" target="_blank" class="bg-indigo-100 p-3 rounded-full text-indigo-600 hover:bg-indigo-200 transition duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form action="https://formspree.io/f/xoqrdqvq" method="post" class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text"  name="Name" placeholder="Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                            <input type="email"  name="Email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text"  name="Subject" placeholder="Subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Enter subject">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message"  class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea name="Message" placeholder="Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-indigo-700 transition duration-300">Send Message</button>
                     </form>
                 </div>
-            </section>
-            <!-- ===== Contact Section End ===== -->
+            </div>
         </div>
-        <!-- ===== Main Content End ===== -->
-    </div>
-    <!-- ===== Main Container End ===== -->
-    <!-- ===== Style Switcher Start ===== -->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
-        </div>
-        <div class="day-night s-icon">
-            <i class="fas "></i>
-        </div>
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-        </div>
-    </div>
-    <!-- ===== Style Switcher End ===== -->
-    <!-- ===== JS Files ===== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
-    <script src="js/style-switcher.js"></script>
-</body>
+    </section>
 
+    <!-- References Section -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">References</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2">Md. Ziaur Rahman</h3>
+                    <p class="text-indigo-600 font-medium mb-2">Software Architect</p>
+                    <p class="text-gray-600 mb-4">Vivasoft Ltd.</p>
+                    <p class="text-gray-600"><i class="fas fa-envelope mr-2"></i>sust.zia@gmail.com</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2">Abdus Samad Mizi</h3>
+                    <p class="text-indigo-600 font-medium mb-2">Principal Software Engineer</p>
+                    <p class="text-gray-600 mb-4">BJIT Group</p>
+                    <p class="text-gray-600"><i class="fas fa-envelope mr-2"></i>anismizicse@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-gray-900 text-white">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2023 Md Arifur Rahman. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/arifur-rahman-uap/" target="_blank" class="hover:text-indigo-400 transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/ArifurRahmanUAP" target="_blank" class="hover:text-indigo-400 transition duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active-nav');
+                    });
+                    this.classList.add('active-nav');
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active-nav');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active-nav');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
